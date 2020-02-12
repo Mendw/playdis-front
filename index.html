@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <body id="body" class="dark-mode">
+        <div class="navbar">
+            <h3>PlayDis</h3>
+            <ul>
+                <a class="current">
+                    Recent Playlists 
+                </a>
+                <a href="about.html">
+                    About
+                </a>
+                <button class="switch" type="button" id="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Light Mode</button>       
+            </ul>
+        </div>
+        <div class="divider"></div>
+        <br>
+        <br>
+        <div class="content">
+            <!--Search Bar-->
+            <input type="url" placeholder="Search for a Playlist" class="searchBar" id="url">
+            <button type="submit" onclick="get_playlist_id()" class="green green-border">
+                <i class="fa fa-search"></i>
+            </button>
+            <br>
+            <br>
+            <!--Playlists-->
+            <div class="playlist">
+                <a href="/71Dtq0fNlbzMbuoLMS5B1W" class="flex-container">
+                    <div class="frame">
+                        <img src="https://i.imgur.com/w7Uv8e2.jpg">
+                    </div>
+                    <div class="vertical flex-container padded">
+                        <div class="flex"></div>
+                        academia.
+                        <div class="flex"></div>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <div class="playlist">
+                <a href="/1rEHOi4UKEmkQ9wizeDqwk" class="flex-container">
+                    <div class="frame">
+                        <img src="https://i.imgur.com/eAUYPGT.jpg">
+                    </div>
+                    <div class="vertical flex-container padded">
+                        <div class="flex"></div>
+                        on the coast of italy, lounging on the beach &amp; pondering love-related burdens
+                        <div class="flex"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+</body>
+
+</html>
