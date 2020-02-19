@@ -4,6 +4,10 @@ h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
 
+html{
+  height: 100%;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -11,6 +15,7 @@ body{
   color: #eee;
 
   margin: 0;
+  height: 100%;
 }
 
 a{
@@ -40,10 +45,6 @@ a{
 
 .flex-container.flex-end-justified{
   justify-content: flex-end;
-}
-
-.flex-container.center-justified{
-  justify-content: center;
 }
 
 .flex{
@@ -83,6 +84,8 @@ a{
   width: 100px;
 
   position: relative;
+  background-position: center;
+  background-size: cover;
 }
 
 .image-frame>img{
@@ -117,13 +120,36 @@ a{
   border-radius: 5px;
 
   border: transparent;
+
+  margin-right: 50px;
 }
 
 .playlist{
   margin: 10px;
-  padding: 10px;
+  overflow: hidden;
   border-bottom: 3px solid rgb(81, 167, 131);
   background-color: #222;
 
-  width: 400px;
+  height: 100px;
+  max-width: 500px;
+
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px black;
+}
+
+.results{
+  margin: 1%;
+
+  box-shadow: 5px 0 5px black, -5px 0 5px black;
+  padding: 0px 30px;
+}
+
+i.fa,.far.fas{
+  color: #eee;
+}
+
+.playlists{
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-evenly;
 }
