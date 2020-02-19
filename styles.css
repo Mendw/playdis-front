@@ -1,87 +1,129 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
 
-body{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
-
-.switch {
-  --background: #FFF;
-  --text: #000;
-  color: var(--text);
-  width: auto;
-  height: auto;
-  background: var(--highlight);
-  border-radius: 50px;
-  position: relative;
-  transition: 0.5s all ease;
-  border: none;
-  font-family: 'Poppins', sans-serif;
-}
-
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.content{
+h1,h2,h3,h4,h5,h6{
   text-align: center;
 }
 
-.disclaimer{
-  font-style: italic;
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  background-color: #111;
+  color: #eee;
+
+  margin: 0;
 }
 
-ul{
-  display: flex;
-  list-style-type: none;
-}
-
-ul a {
-  margin: 10px;
+a{
+  color: #eee;
   text-decoration: none;
+}
+
+.flex-container{
+  display: flex;
+}
+
+.flex-container>h1,h2,h3,h4,h5,h6{
+  flex: 1;
+}
+
+.vertical.flex-container{
+  flex-direction: column;
+}
+
+.horizontal.flex-container{
+  flex-direction: row;
+}
+
+.flex-container.middle-aligned{
+  align-items: center;
+}
+
+.flex-container.flex-end-justified{
+  justify-content: flex-end;
+}
+
+.flex-container.center-justified{
+  justify-content: center;
+}
+
+.flex{
+  flex: 1;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.input-button-pair>input{
+  border: transparent;
+  border-radius: 5px 0px 0px 5px;
+  padding: 10px;
+
+  max-width: 75%;
+  width: 500px;
+}
+
+.input-button-pair>button{
+  border: transparent;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px;
+
+  background-color: rgb(81, 167, 131);
 }
 
 .divider{
   height: 2px;
-  background-color: lightgray;
-}
+  width: 100%;
 
-.current{
-  text-decoration: underline ;
-}
-
-.searchBar{
-  border-radius: 50px;
-  border: none;
-  height: 32px;
-  padding-left: 20px;
-}
-
-
-body.dark-mode {
-  background-color: #111;
-  color: #eee;
-}
-body.dark-mode a {
-  color: #eee;
-}
-body.dark-mode button {
   background-color: #eee;
-  color: #111;
 }
 
-body.light-mode {
-  background-color: #eee;
-  color: #111;
-}
-body.light-mode a {
-  color: #111;
-}
-body.light-mode button {
-  background-color: #111;
-  color: #eee;
+.image-frame{
+  height: 100px;
+  width: 100px;
+
+  position: relative;
 }
 
+.image-frame>img{
+  margin: auto;
+
+  position: absolute;
+  
+  top: 0;
+  bottom: 0;
+
+  right: 0;
+  left: 0;
+
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.playlist-title{
+  flex: 1;
+  padding: 10px;
+}
+
+.playlist-title>*{
+  padding: 5px;
+}
+
+.filter{
+  padding: 10px;
+  border-radius: 5px;
+
+  border: transparent;
+}
+
+.playlist{
+  margin: 10px;
+  padding: 10px;
+  border-bottom: 3px solid rgb(81, 167, 131);
+  background-color: #222;
+
+  width: 400px;
+}

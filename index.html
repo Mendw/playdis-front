@@ -1,63 +1,73 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
+
+    <title>PlayDis</title>
+    <meta name="description" content="when spotify playlists are just too annoying">
+    <meta name="author" content="Jose Mendoza; Ricardo Carrasquero">
+    <script src="https://kit.fontawesome.com/aafbfbe7f1.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles.css">
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="main.js" type="text/javascript"></script>
+
 </head>
 
 <body>
-    <body id="body" class="dark-mode">
-        <div class="navbar">
-            <h3>PlayDis</h3>
-            <ul>
-                <a class="current">
-                    Recent Playlists 
-                </a>
-                <a href="about.html">
-                    About
-                </a>
-                <button class="switch" type="button" id="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">Light Mode</button>       
-            </ul>
-        </div>
-        <div class="divider"></div>
-        <br>
-        <br>
-        <div class="content">
-            <!--Search Bar-->
-            <input type="url" placeholder="Search for a Playlist" class="searchBar" id="url">
-            <button type="submit" onclick="get_playlist_id()" class="green green-border">
-                <i class="fa fa-search"></i>
-            </button>
-            <br>
-            <br>
-            <!--Playlists-->
-            <div class="playlist">
-                <a href="/71Dtq0fNlbzMbuoLMS5B1W" class="flex-container">
-                    <div class="frame">
-                        <img src="https://i.imgur.com/w7Uv8e2.jpg">
-                    </div>
-                    <div class="vertical flex-container padded">
-                        <div class="flex"></div>
-                        academia.
-                        <div class="flex"></div>
-                    </div>
-                </a>
-            </div>
-            <br>
-            <div class="playlist">
-                <a href="/1rEHOi4UKEmkQ9wizeDqwk" class="flex-container">
-                    <div class="frame">
-                        <img src="https://i.imgur.com/eAUYPGT.jpg">
-                    </div>
-                    <div class="vertical flex-container padded">
-                        <div class="flex"></div>
-                        on the coast of italy, lounging on the beach &amp; pondering love-related burdens
-                        <div class="flex"></div>
-                    </div>
-                </a>
+    <!-- title and search bar-->
+    <div class="horizontal flex-container middle-aligned">
+        <h2>PlayDis</h2>
+        <div class="flex-3 horizontal flex-container flex-end-justified">
+            <div class="input-button-pair">
+                <input placeholder="search"><button><i class="fa fa-search"></i></button>
             </div>
         </div>
+    </div>
+
+    <!-- divider -->
+    <div class="divider"></div>
+
+    <!-- recent playlists, filtered -->
+    <div class="vertical flex-container flex">
+        <!-- header -->
+        <div class="horizontal flex-container">
+            <div class="flex"></div>
+            <div class="horizontal flex-container middle-aligned flex-3">
+                <h3>Recent Playlists</h3>
+                <div class="flex-3 horizontal flex-container">
+                    <input placeholder="filter" class="filter">
+                </div>
+            </div>
+        </div>
+
+        <!-- actual results -->
+        <div class="horizontal flex-container">
+            <div class="flex"></div>  
+            <div class="flex-3 vertical flex-container">
+                <!-- playlist -->
+                <div class="horizontal flex-container">
+                    <a class="horizontal flex-container middle-aligned playlist" href="/1rEHOi4UKEmkQ9wizeDqwk">
+                        <div class="flex-container middle-aligned">
+                            <div class="image-frame">
+                                <img src="https://i.imgur.com/w7Uv8e2.jpg">
+                            </div>
+                        </div>
+                        <div class="playlist-title">
+                            <span class>academia.</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <div class="flex"></div>
+                </div>
+            </div></div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div>
+
+    </div>
 </body>
 
 </html>
